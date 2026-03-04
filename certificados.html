@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Gaviria | Analista y Desarrollador de Software</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div id="nav-container"></div>
+    <script>
+        fetch("/componentes/nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-container").innerHTML = data;
+            });
+    </script>
+
+    <main class="certificados">
+
+        <section class="projects">
+            <div class="projects__container">
+                <h2 class="projects__title">Mis certificados</h2>
+                <p class="presentacion__contenido__texto">
+                    En esta sección se pueden encontrar los diferentes certificados de mis estudios tecnológicos,
+                    universitarios y otros cursos.
+                </p>
+
+                <div class="projects__grid">
+
+                    <!-- Card 1 -->
+                    <div class="project__card">
+                        <img src="images/ima11.jpg" alt="Diploma Tecnología" class="certificado__image">
+
+                        <div class="certificado__content">
+                            <h3 class="certificado__title">Tecnología en Análisis y Desarrollo de Software</h3>
+                            <h3 class="certificado__subtitle">SENA</h3>
+
+                            <div class="project__buttons">
+                                <a href="#" class="btn btn--primary btn-certificado">Ver certificado</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="project__card">
+                        <img src="images/ima12.jpg" alt="Diploma Licenciatura" class="certificado__image">
+
+                        <div class="certificado__content">
+                            <h3 class="certificado__title">Licenciatura en Matemáticas y Física</h3>
+                            <h3 class="certificado__subtitle">Universidad de Antioquia</h3>
+
+                            <div class="project__buttons">
+                                <a href="#" class="btn btn--primary btn-certificado">Ver certificado</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="project__card">
+                        <img src="images/ima13.jpg" alt="Diploma Oracle-Alura" class="certificado__image">
+
+                        <div class="certificado__content">
+                            <h3 class="certificado__title">ONE Oracle Next Education Back-end</h3>
+                            <h3 class="certificado__subtitle">Alura Latam</h3>
+
+                            <div class="project__buttons">
+                                <a href="#" class="btn btn--primary btn-certificado">Ver certificado</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="project__card">
+                        <img src="images/ima15.jpg" alt="Diploma politécnico" class="certificado__image">
+
+                        <div class="certificado__content">
+                            <h3 class="certificado__title">Diplomado en Programación en Java</h3>
+                            <h3 class="certificado__subtitle">Politécnico de Colombia</h3>
+
+                            <div class="project__buttons">
+                                <a href="#" class="btn btn--primary btn-certificado">Ver certificado</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="project__card">
+                        <img src="images/ima16.jpg" alt="Diploma JavaSena" class="certificado__image">
+
+                        <div class="certificado__content">
+                            <h3 class="certificado__title">Curso de Variables y Estructuras de Control en la
+                                Programación Orientada a Objetos: Java</h3>
+                            <h3 class="certificado__subtitle">SENA</h3>
+
+                            <div class="project__buttons">
+                                <a href="#" class="btn btn--primary btn-certificado">Ver certificado</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-container"></div>
+    <script>
+        fetch("componentes/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-container").innerHTML = data;
+            });
+    </script>
+
+    <script src="js/lightbox.js"></script>
+
+</body>
+
+</html>
+

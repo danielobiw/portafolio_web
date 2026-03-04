@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Gaviria | Analista y Desarrollador de Software</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div id="nav-container"></div>
+    <script>
+        fetch("/componentes/nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-container").innerHTML = data;
+            });
+    </script>
+
+    <main class="proyectos">
+
+        <section class="projects">
+            <div class="projects__container">
+                <h2 class="projects__title">Mis proyectos</h2>
+                <p class="presentacion__contenido__texto">
+                    En esta sección se pueden encontrar algunos de los proyectos que he desarrollado utilizando
+                    JavaScrip,
+                    Java, Python y Next.js.
+                </p>
+
+                <div class="projects__grid">
+
+                    <!-- Proyecto 1 -->
+                    <div class="project__card">
+                        <img src="images/ima1.png" alt="Web de Dragon Ball" class="project__image">
+
+                        <div class="project__content">
+                            <h3 class="project__title">Web temática de Dragon Ball</h3>
+
+                            <p class="project__description">
+                                Sitio web informativo sobre el anime Dragon Ball desarrollado con Next.js y consumo de
+                                una API.
+                            </p>
+
+                            <div class="project__tech">
+                                <span>Next.js</span>
+                                <span>REST API</span>
+                                <span>Fetch</span>
+                            </div>
+
+                            <div class="project__buttons">
+                                <a href="https://archivo-dragon-ball.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--primary">Visitar sitio web</a>
+                                <a href="https://github.com/danielobiw/archivo-dragon-ball" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--secondary">Ver código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="project__card">
+                        <img src="images/ima2.png" alt="Encriptador de texto" class="project__image">
+
+                        <div class="project__content">
+                            <h3 class="project__title">Encriptador de texto</h3>
+
+                            <p class="project__description">
+                                Aplicación web para cifrado y descifrado de mensajes de texto utilizando JavaScript.
+                            </p>
+
+                            <div class="project__tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project__buttons">
+                                <a href="https://encriptador-de-texto-jade.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--primary">Visitar sitio web</a>
+                                <a href="https://github.com/danielobiw/encriptador-de-texto" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--secondary">Ver código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="project__card">
+                        <img src="images/ima3.jpg" alt="Simulador de evento" class="project__image">
+
+                        <div class="project__content">
+                            <h3 class="project__title">Simulador de venta de entradas para un evento</h3>
+
+                            <p class="project__description">
+                                Web interactiva que simula la página de un evento y el proceso de compra de tiquetes,
+                                diseñada para demostrar habilidades en maquetación, lógica de frontend y buenas
+                                prácticas de organización del código.
+                            </p>
+
+                            <div class="project__tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project__buttons">
+                                <a href="https://simulador-de-eventos.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--primary">Visitar sitio web</a>
+                                <a href="https://github.com/danielobiw/Simulador-de-eventos" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--secondary">Ver código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 4 -->
+                    <div class="project__card">
+                        <img src="images/ima4.jpg" alt="web de recetas de cocina" class="project__image">
+
+                        <div class="project__content">
+                            <h3 class="project__title">Página web de recetas de cocina</h3>
+
+                            <p class="project__description">
+                                Página web desarrollada con HTML y CSS.
+                            </p>
+
+                            <div class="project__tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <div class="project__buttons">
+                                <a href="https://recetas-pink.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn--primary">Visitar sitio web</a>
+                                <a href="https://github.com/danielobiw/recetas" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--secondary">Ver código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 5 -->
+                    <div class="project__card">
+                        <img src="images/ima5.jpg" alt="CRUD por consola con python" class="project__image">
+
+                        <div class="project__content">
+                            <h3 class="project__title">CRUD por consola con Python</h3>
+
+                            <p class="project__description">
+                                Aplicación desarrollada en Python que implementa operaciones CRUD (crear, leer,
+                                actualizar y eliminar registros) por medio de la consola y que sirve para gestionar el
+                                inventario de videojuegos del usuario.
+                            </p>
+
+                            <div class="project__tech">
+                                <span>Python</span>
+                                <span>MySQL</span>
+                                <span>mysql-connector</span>
+                            </div>
+
+                            <div class="project__buttons">
+                                <a href="https://github.com/danielobiw/crud_consola_python" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--secondary">Ver código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 6 -->
+                    <div class="project__card">
+                        <img src="images/ima6.jpg" alt="Conversor de moneda Java" class="project__image">
+
+                        <div class="project__content">
+                            <h3 class="project__title">Conversor de moneda por consola con Java</h3>
+
+                            <p class="project__description">
+                                Aplicación de consola desarrollada en Java que consume una REST API externa para obtener
+                                tasas de cambio en tiempo real.
+                            </p>
+
+                            <div class="project__tech">
+                                <span>Java</span>
+                                <span>REST API</span>
+                            </div>
+
+                            <div class="project__buttons">
+                                <a href="https://github.com/danielobiw/ConversorDeMoneda" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--secondary">Ver código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 7 -->
+                    <div class="project__card">
+                        <img src="images/ima7.jpg" alt="LiterAlura" class="project__image">
+
+                        <div class="project__content">
+                            <h3 class="project__title">Libros LiterAlura</h3>
+
+                            <p class="project__description">
+                                Aplicación backend desarrollada con Java y Spring Boot para gestión de libros.
+                            </p>
+
+                            <div class="project__tech">
+                                <span>Java</span>
+                                <span>MySQL</span>
+                                <span>REST API</span>
+                                <span>Spring</span>
+                            </div>
+
+                            <div class="project__buttons">
+                                <a href="https://github.com/danielobiw/libros-literalura" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn--secondary">Ver código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-container"></div>
+    <script>
+        fetch("componentes/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-container").innerHTML = data;
+            });
+    </script>
+
+    <script src="js/lightbox.js"></script>
+
+</body>
+
+</html>
+

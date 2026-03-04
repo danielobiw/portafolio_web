@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Gaviria | Analista y Desarrollador de Software</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div id="nav-container"></div>
+    <script>
+        fetch("componentes/nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-container").innerHTML = data;
+            });
+    </script>
+
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__contenido__titulo">
+                Analista y Desarrollador de Software
+            </h1>
+            <h2 class="titulo-destaque">
+                Transformando lógica en soluciones digitales
+            </h2>
+
+            <p class="presentacion__contenido__texto">
+                ¡Hola! Soy Daniel Gaviria, Tecnólogo en Análisis y Desarrollo de Software del SENA y Licenciado en
+                Matemáticas y Física de la Universidad de Antioquia.
+                </br></br>
+                Desarrollo aplicaciones web modernas utilizando Next.js, Python, Java y Spring Boot, integrando APIs y
+                bases de datos para crear soluciones funcionales y eficientes.
+                </br></br>
+                Mi formación fortalece mi pensamiento lógico y analítico para la
+                resolución estructurada de problemas. Me apasiona el aprendizaje constante y la creación de soluciones
+                tecnológicas eficientes, funcionales y bien diseñadas.
+            </p>
+
+            <div class="presentacion__enlaces">
+                <h3 class="presentacion__enlaces__subtitulo">Accede a mis redes para conocer más</h3>
+                <a class="presentacion__enlaces__link" href="https://github.com/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./assets/github.png">
+                    Github
+                </a>
+                <a class="presentacion__enlaces__link" href="https://linkedin.com/in/" target="_blank">
+                    <img src="./assets/linkedin.png" target="_blank" rel="noopener noreferrer">
+                    Linkedin
+                </a>
+            </div>
+
+        </section>
+        <div class="presentacion__imagen">
+            <img src="./images/ima66.jpg" alt="Foto de Daniel Gaviria">
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+    <script>
+        fetch("componentes/footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-container").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>
