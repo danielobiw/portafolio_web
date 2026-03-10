@@ -140,7 +140,7 @@ main {
 .presentacion__imagen {
     margin-top: 48px;
     position: relative;
-    width: 45%;
+    width: 35%;
 }
 
 .presentacion__imagen::before {
@@ -436,7 +436,7 @@ main {
         /* centra bloques */
         text-align: center;
         /* texto centrado en móvil */
-        padding: 8% 5%;
+        padding: 5% 5%;
         gap: 40px;
         /* espacio entre imagen y texto */
     }
@@ -446,7 +446,7 @@ main {
     }
 
     .presentacion__imagen {
-        width: 40%;
+        width: 30%;
         /* imagen más proporcionada en tablet */
     }
 
@@ -486,7 +486,7 @@ main {
         }
 
         .presentacion__imagen {
-            width: 55%;
+            width: 45%;
         }
 
         .presentacion__imagen::before {
